@@ -1,0 +1,2 @@
+qubes.SshAgent * q-ssh q-split-ssh ask default_target=q-split-ssh
+qubes.SshAgent * q-dev q-split-ssh ask default_target=q-split-ssh

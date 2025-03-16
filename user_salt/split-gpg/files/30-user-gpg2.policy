@@ -1,0 +1,1 @@
+qubes.Gpg2 + q-ssh @default allow target=q-split-gpg
