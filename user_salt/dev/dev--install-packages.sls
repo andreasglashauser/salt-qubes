@@ -9,6 +9,8 @@ dev--install-packages:
       - neovim
       - tmux
       - git
+      - git-lfs
+      - git-delta
       - python3-virtualenvwrapper
 
 {% endif %}
