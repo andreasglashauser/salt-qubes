@@ -1,7 +1,7 @@
 [qubes-dom0-current]
 name = Qubes Host Repository (updates)
-baseurl = https://yum.qubes-os.org/r$releasever/current/host/fc37
-#baseurl = http://yum.qubesosfasa4zl44o4tws22di6kepyzfeqv3tg4e3ztknltfxqrymdad.onion/r$releasever/current/host/fc37
+#baseurl = https://yum.qubes-os.org/r$releasever/current/host/fc37
+baseurl = http://yum.qubesosfasa4zl44o4tws22di6kepyzfeqv3tg4e3ztknltfxqrymdad.onion/r$releasever/current/host/fc37
 #metalink = https://yum.qubes-os.org/r$releasever/current/host/fc37/repodata/repomd.xml.metalink
 skip_if_unavailable=False
 enabled = 1
@@ -11,8 +11,8 @@ gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-qubes-$releasever-primary
 
 [qubes-dom0-current-testing]
 name = Qubes Host Repository (updates-testing)
-baseurl = https://yum.qubes-os.org/r$releasever/current-testing/host/fc37
-#baseurl = http://yum.qubesosfasa4zl44o4tws22di6kepyzfeqv3tg4e3ztknltfxqrymdad.onion/r$releasever/current-testing/host/fc37
+#baseurl = https://yum.qubes-os.org/r$releasever/current-testing/host/fc37
+baseurl = http://yum.qubesosfasa4zl44o4tws22di6kepyzfeqv3tg4e3ztknltfxqrymdad.onion/r$releasever/current-testing/host/fc37
 #metalink = https://yum.qubes-os.org/r$releasever/current-testing/host/fc37/repodata/repomd.xml.metalink
 skip_if_unavailable=False
 enabled = 0
@@ -22,8 +22,8 @@ gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-qubes-$releasever-primary
 
 [qubes-dom0-security-testing]
 name = Qubes Host Repository (security-testing)
-baseurl = https://yum.qubes-os.org/r$releasever/security-testing/host/fc37
-#baseurl = http://yum.qubesosfasa4zl44o4tws22di6kepyzfeqv3tg4e3ztknltfxqrymdad.onion/r$releasever/security-testing/host/fc37
+#baseurl = https://yum.qubes-os.org/r$releasever/security-testing/host/fc37
+baseurl = http://yum.qubesosfasa4zl44o4tws22di6kepyzfeqv3tg4e3ztknltfxqrymdad.onion/r$releasever/security-testing/host/fc37
 #metalink = https://yum.qubes-os.org/r$releasever/security-testing/host/fc37/repodata/repomd.xml.metalink
 skip_if_unavailable=False
 enabled = 0
@@ -33,8 +33,8 @@ gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-qubes-$releasever-primary
 
 [qubes-dom0-unstable]
 name = Qubes Host Repository (unstable)
-baseurl = https://yum.qubes-os.org/r$releasever/unstable/host/fc37
-#baseurl = http://yum.qubesosfasa4zl44o4tws22di6kepyzfeqv3tg4e3ztknltfxqrymdad.onion/r$releasever/unstable/host/fc37
+#baseurl = https://yum.qubes-os.org/r$releasever/unstable/host/fc37
+baseurl = http://yum.qubesosfasa4zl44o4tws22di6kepyzfeqv3tg4e3ztknltfxqrymdad.onion/r$releasever/unstable/host/fc37
 #metalink = https://yum.qubes-os.org/r$releasever/unstable/host/fc37/repodata/repomd.xml.metalink
 skip_if_unavailable=False
 enabled = 0
