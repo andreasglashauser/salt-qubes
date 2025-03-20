@@ -9,7 +9,7 @@ sys-net--configure-sys-qube:
       - class: DispVM
     - prefs:
       - audiovm:
-      - guivm:
+      - guivm: dom0
       - netvm:
     - require:
       - sys-net--create-app-qube
