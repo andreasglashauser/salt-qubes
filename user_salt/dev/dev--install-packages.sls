@@ -12,5 +12,6 @@ dev--install-packages:
       - git-lfs
       - git-delta
       - python3-virtualenvwrapper
+      - knock
 
 {% endif %}
