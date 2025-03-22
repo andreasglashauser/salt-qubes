@@ -13,5 +13,6 @@ dev--install-packages:
       - git-delta
       - python3-virtualenvwrapper
       - knock
+      - tree
 
 {% endif %}
