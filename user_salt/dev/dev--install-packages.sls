@@ -14,5 +14,6 @@ dev--install-packages:
       - python3-virtualenvwrapper
       - knock
       - tree
+      - firefox
 
 {% endif %}
