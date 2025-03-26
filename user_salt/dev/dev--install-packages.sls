@@ -15,5 +15,8 @@ dev--install-packages:
       - knock
       - tree
       - firefox
+      - sqlite3
+      - podman
+      - python3.11
 
 {% endif %}
