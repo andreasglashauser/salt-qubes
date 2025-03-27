@@ -17,6 +17,7 @@ dev--install-packages:
       - firefox
       - sqlite3
       - podman
+      - podman-compose
       - python3.11
 
 {% endif %}
