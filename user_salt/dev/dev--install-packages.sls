@@ -19,5 +19,6 @@ dev--install-packages:
       - podman
       - podman-compose
       - python3.11
+      - tcpdump
 
 {% endif %}
