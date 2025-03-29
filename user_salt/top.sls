@@ -131,3 +131,6 @@ user:
   dom0 or sys-whonix:
     - sys-whonix
     - common.kernel.kernel--disable-sound
+  
+  dom0 or template-llm or q-llm:
+    - llm
