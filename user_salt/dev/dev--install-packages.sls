@@ -20,5 +20,6 @@ dev--install-packages:
       - podman-compose
       - python3.11
       - tcpdump
+      - fuse-libs
 
 {% endif %}
