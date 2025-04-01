@@ -1,0 +1,19 @@
+## Copyright (C) 2012 - 2023 ENCRYPTED SUPPORT LP <adrelanos@whonix.org>
+## See the file COPYING for copying conditions.
+
+## /etc/apt/sources.list.d/derivative.list
+
+## This file has been automatically created by repository-dist.
+## If you make manual changes to it, your changes get lost next time you run
+## the repository-dist tool.
+## You can conveniently manage this file, using the repository-dist tool.
+## For any modifications (delete this file, use stable version, use testers
+## version or use developers version), please use the repository-dist tool.
+## Run:
+##    sudo repository-dist
+## Leaving source line disabled by default to save some time, it's not useful
+## anyway, since it's better to get the source code from the git repository.
+
+deb [signed-by=/usr/share/keyrings/derivative.asc] tor+http://deb.w5j6stm77zs6652pgsij4awcjeel3eco7kvipheu6mtr623eyyehj4yd.onion bookworm main contrib non-free
+#deb-src [signed-by=/usr/share/keyrings/derivative.asc] tor+http://deb.w5j6stm77zs6652pgsij4awcjeel3eco7kvipheu6mtr623eyyehj4yd.onion bookworm main contrib non-free
+

@@ -1,7 +1,11 @@
-{% if 'whonix' in grains['id'] %}
+{% if 'whonix' in grains['id'] and not 'dvm' in grains['id'] %}
 
 onionize-repositories--whonix-derivative:
-  cmd.run:
-    - name: repository-dist --enable --transport onion 
+  file.managed:
+    - name: /etc/apt/sources.list.d/derivative.list
+    - source: salt://common/onionize-repositories/files/derivative.list
+    - user: root
+    - group: root
+    - mode: 644
 
 {% endif %}
