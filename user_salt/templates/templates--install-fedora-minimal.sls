@@ -13,5 +13,7 @@ templates--fedora-{{ version.fedora }}-minimal-prefs:
     - audiovm:
     - guivm:
     - netvm:
+    - require:
+      - qvm: templates--install-fedora-{{ version.fedora }}-minimal
 
 {% endif %}
