@@ -3,7 +3,9 @@
 disk-trimming--configure-cron-trim:
   file.managed:
     - name: /etc/cron.hourly/trim
-    - source: salt://common/disk-trimming/files/trim-script
+    - contents: |
+        #!/bin/bash
+        /sbin/fstrim --all
     - user: root
     - group: root
     - mode: 755
