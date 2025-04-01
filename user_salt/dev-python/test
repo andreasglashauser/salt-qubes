@@ -1,0 +1,23 @@
+dev-python--firewall:
+  cmd.run:
+    - name: |
+        # Delete all existing rules (safer than reset + manual adds)
+        qvm-firewall q-dev-python reset
+        # Add new rules in order
+        qvm-firewall q-dev-python add accept specialtarget=dns
+        qvm-firewall q-dev-python add accept proto=icmp
+        qvm-firewall q-dev-python add accept github.com proto=tcp
+        qvm-firewall q-dev-python add accept git.example.com proto=tcp
+        qvm-firewall q-dev-python add drop
+    - unless: |
+        # Capture current firewall rules in raw format
+        CURRENT=$(qvm-firewall --raw q-dev-python list)
+        # Define EXACT desired output (including formatting)
+        DESIRED='accept specialtarget=dns
+        accept proto=icmp
+        accept dsthost=github.com proto=tcp
+        accept dsthost=git.example.com proto=tcp
+        drop'
+        # Compare without trailing newlines
+        [ "$(echo "$CURRENT" | tr -d '\n')" = "$(echo "$DESIRED" | tr -d '\n')" ]
+    - output_loglevel: quiet
