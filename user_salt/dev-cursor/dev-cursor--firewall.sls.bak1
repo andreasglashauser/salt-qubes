@@ -1,0 +1,29 @@
+{% if grains['id'] == 'dom0' %}
+
+dev-cursor--firewall:
+  cmd.run:
+    - name: |
+        qvm-firewall q-dev-cursor reset
+        qvm-firewall q-dev-cursor del accept
+        qvm-firewall q-dev-cursor add accept specialtarget=dns
+        qvm-firewall q-dev-cursor add accept proto=icmp
+        qvm-firewall q-dev-cursor add accept api2.cursor.sh
+        qvm-firewall q-dev-cursor add accept api3.cursor.sh
+        qvm-firewall q-dev-cursor add accept repo42.cursor.sh
+        qvm-firewall q-dev-cursor add accept api4.cursor.sh
+        qvm-firewall q-dev-cursor add accept marketplace.cursorapi.com
+        qvm-firewall q-dev-cursor add accept cursor-cdn.com
+        qvm-firewall q-dev-cursor add accept downloads.cursor.com
+        qvm-firewall q-dev-cursor add accept vscodevim.gallerycdn.vsassets.io
+        qvm-firewall q-dev-cursor add accept vscodevim.gallerycdn.vsassets.io
+        qvm-firewall q-dev-cursor add accept www.vscode-unpkg.net
+        qvm-firewall q-dev-cursor add accept repo42.cursor.sh.cdn.cloudflare.net
+        qvm-firewall q-dev-cursor add accept cursor-lb-3-1690831134.us-east-1.elb.amazonaws.com
+        qvm-firewall q-dev-cursor add accept market-prod-cdn.trafficmanager.net
+        qvm-firewall q-dev-cursor add accept raw.githubusercontent.com
+        qvm-firewall q-dev-cursor add accept main.vscode-cdn.net
+        qvm-firewall q-dev-cursor add drop
+    - require:
+      - qvm: dev-cursor--create-qube
+
+{% endif %}
