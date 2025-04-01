@@ -7,7 +7,6 @@ remove-unwanted--debian-packages:
       - nano
       - tasksel
       - less
-      - vim-common
       - nftables
       - fdisk
       - eatmydata
