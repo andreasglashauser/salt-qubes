@@ -1,6 +1,6 @@
 {% if grains['id'] == 'dom0' %}
 
-mullvad-browser--create-app-qube:
+mullvad-browser--create-qube:
   qvm.vm:
     - name: q-mullvad-browser
     - present:
@@ -14,7 +14,7 @@ mullvad-browser--create-app-qube:
       - template_for_dispvms: True
     - features:
       - set:
-        - menu-items: mullvad-browser.desktop debian-xterm.desktop
+        - menu-items: mullvad-browser-alpha.desktop mullvad-browser.desktop debian-xterm.desktop
     - require:
       - qvm: mullvad-browser--create-template
 
