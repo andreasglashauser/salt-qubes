@@ -7,7 +7,6 @@ dev-cursor--install-packages:
       - qubes-core-agent-networking
       - qubes-app-shutdown-idle
       - git
-      - git-delta
       - python3-virtualenvwrapper
       - tree
       - fuse-libs
