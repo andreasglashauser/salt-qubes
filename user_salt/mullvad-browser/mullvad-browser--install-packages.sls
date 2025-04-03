@@ -6,7 +6,6 @@ mullvad-browser--install-packages:
     - pkgs:
       - qubes-core-agent-networking
       - mullvad-browser
-      - mullvad-browser-alpha
       - pulseaudio-qubes
     - require:
       - file: mullvad-browser--configure-repos
