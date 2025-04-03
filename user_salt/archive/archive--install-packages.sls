@@ -5,5 +5,6 @@ archive--install-packages:
     - refresh: True
     - pkgs:
       - qubes-app-shutdown-idle
+      - vim-tiny
 
 {% endif %}
