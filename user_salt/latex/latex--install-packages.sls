@@ -7,7 +7,6 @@ dev--install-packages:
       - qubes-app-shutdown-idle
       - neovim
       - tmux
-      - tree
       - texlive-scheme-full
       - zathura
 
