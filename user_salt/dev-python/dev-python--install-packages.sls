@@ -4,7 +4,6 @@ dev-phyton--install-packages:
   pkg.installed:
     - refresh: True
     - pkgs:
-      - qubes-core-agent-networking
       - qubes-app-shutdown-idle
       - tmux
       - neovim
