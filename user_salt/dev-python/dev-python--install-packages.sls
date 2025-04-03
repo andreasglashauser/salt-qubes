@@ -9,7 +9,6 @@ dev-phyton--install-packages:
       - tmux
       - neovim
       - git
-      - git-delta
       - python3-virtualenvwrapper
       - tree
 
