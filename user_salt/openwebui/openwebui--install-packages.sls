@@ -7,5 +7,6 @@ openwebui--install-packages:
       - qubes-app-shutdown-idle
       - podman
       - firefox
+      - vim-tiny
 
 {% endif %}
