@@ -7,6 +7,7 @@ mullvad-browser--install-packages:
       - qubes-core-agent-networking
       - mullvad-browser
       - pulseaudio-qubes
+      - vim-tiny
     - require:
       - file: mullvad-browser--configure-repos
  
