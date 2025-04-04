@@ -8,6 +8,7 @@ dev-phyton--install-packages:
       - tmux
       - neovim
       - git
+      - git-lfs
       - python3-virtualenvwrapper
       - tree
 
